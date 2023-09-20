@@ -48,11 +48,12 @@ body {
 }
 .mask {
   -webkit-mask-image: radial-gradient(
-    at center,
-    #150e28 50%,
-    #150e2807,
-    transparent
+    circle at center,
+    rgb(0, 0, 0, 0.7),
+    rgb(0, 0, 0, 1) 10%,
+    rgb(0, 0, 0, 0) 80%
   );
+  -webkit-mask-size: cover;
 }
 .shine {
   filter: contrast(200%);
