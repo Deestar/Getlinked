@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --border1: 2px solid red;
+  --border2: 2px solid blue;
+  --border3: 2px solid green;
+  --height: -webkit-fill-available;
+  --height2: -moz-available;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  height: var(--height2);
+  height: var(--height);
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: var(--height2);
+  height: var(--height);
+  width: 100%;
+}
+.bd {
+  border: var(--border1);
+}
+.bd2 {
+  border: var(--border2);
+}
+.bd3 {
+  border: var(--border3);
+}
+/* Webkit scroll bar */
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: #150e28;
+  position: absolute;
+  inset: 0;
+  right: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.849); /* Color of the thumb */
+  backdrop-filter: 40px;
+  border-radius: 6px; /* Rounded corners */
+}
+.manbg {
+  background-blend-mode: luminosity;
+}
+.shine {
+  filter: contrast(200%);
 }
