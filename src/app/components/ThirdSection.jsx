@@ -24,7 +24,7 @@ export default function ThirdSection() {
           className="absolute inset-0 w-5 h-5 top-[7%] left-[93%] se_lg:top-[8%] se_lg:left-[80%]  row:top-[8%] row:left-[103%]"
           alt="Star"
         />
-        <div className="absolute inset-0  w-[535px] h-[468px] -top-[50%] left-[40%] se_lg:left-[50%] se_lg:-top-[60%] sm:h-[850px] sm:-top-[90%] sm:w-[850px] overflow-hidden mix-blend-hard-light z-[1] ">
+        <div className="absolute inset-0  w-[535px] h-[468px] -top-[50%] left-[40%] se_lg:left-[50%] se_lg:-top-[60%] sm:h-[850px] sm:-top-[90%] sm:w-[150px] overflow-hidden mix-blend-hard-light z-[1] ">
           <Image
             src={Shine}
             fill

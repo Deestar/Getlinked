@@ -46,9 +46,6 @@ body {
   backdrop-filter: 40px;
   border-radius: 6px; /* Rounded corners */
 }
-.manbg {
-  background-blend-mode: luminosity;
-}
 .shine {
   filter: contrast(200%);
 }
