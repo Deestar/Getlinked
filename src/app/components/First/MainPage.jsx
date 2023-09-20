@@ -27,7 +27,7 @@ export default function MainPage() {
             {/* Absolute Images */}
             <Image
               src={BgShine}
-              className="absolute inset-0 min-w-[450px] left-[-30%] top-[-35%] desk:left-[-200px] desk:top-[-160px] desk:min-w-[600px] z-[1] row:top-[-120%] row:left-[-80px] row:h-[700px] row:min-w-[770px] lg:top-[-90%]"
+              className="absolute inset-0 min-w-[450px] left-[-30%] top-[-35%] desk:left-[-200px] desk:top-[-160px] desk:min-w-[600px] z-[1] row:top-[-120%] row:left-[-80px] row:h-[700px] row:min-w-[770px] lg:top-[-90%] mix-blend-hard-light"
               style={{
                 objectPosition: "center",
               }}
@@ -105,10 +105,10 @@ export default function MainPage() {
           </footer>
         </article>
         {/* Man and stars */}
-        <div className="relative  flex justify-center ">
+        <div className="relative  flex justify-center">
           <Image
             src={BgShine}
-            className="hidden row:block absolute inset-0 min-w-[510px] h-[510px] z-30 top-[-15%] left-[14%] "
+            className="hidden row:block absolute inset-0 min-w-[510px] h-[510px] z-30 top-[-15%] left-[14%] mix-blend-hard-light"
             style={{
               objectPosition: "center",
             }}
@@ -116,13 +116,13 @@ export default function MainPage() {
           />
           <Image
             alt="man"
-            className="h-[350px]  min-w-[310px] [filter:grayscale(80%)] desk:h-[400px]
-            desk:min-w-[380px] sm:min-w-[480px] row:sm:min-w-[54vw] row:sm:h-[530px] lg:sm:min-w-[590px] lg:sm:h-[570px]"
+            className="h-[350px]  min-w-[310px]  desk:h-[400px]
+            desk:min-w-[380px] sm:min-w-[480px] row:sm:min-w-[54vw] row:sm:h-[530px] lg:sm:min-w-[590px] lg:sm:h-[570px] mix-blend-luminosity"
             src={Man}
           />
           <Image
             alt="globe"
-            className="absolute  mx-auto mt-2 min-w-[310px] h-[310px] mr-7 desk:min-w-[350px] desk:h-[350px]  sm:h-[400px] shine sm:min-w-[400px] row:min-w-[500px] row:h-[500px] z-30"
+            className="absolute  mx-auto mt-2 min-w-[310px] h-[310px] mr-7 desk:min-w-[350px] desk:h-[350px]  sm:h-[400px] shine sm:min-w-[400px] row:min-w-[500px] row:h-[500px] z-30 mix-blend-hard-light"
             src={Globe}
           />
         </div>

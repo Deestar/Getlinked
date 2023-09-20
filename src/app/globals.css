@@ -46,6 +46,15 @@ body {
   backdrop-filter: 40px;
   border-radius: 6px; /* Rounded corners */
 }
+.mask {
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    rgb(0, 0, 0, 0.7),
+    rgb(0, 0, 0, 1) 10%,
+    rgb(0, 0, 0, 0) 80%
+  );
+  -webkit-mask-size: cover;
+}
 .shine {
   filter: contrast(200%);
 }
