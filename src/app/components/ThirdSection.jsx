@@ -28,7 +28,6 @@ export default function ThirdSection() {
           <Image
             src={Shine}
             fill
-            className=""
             sizes="100vw"
             style={{
               objectFit: "cover",
