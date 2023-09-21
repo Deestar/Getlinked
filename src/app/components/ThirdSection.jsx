@@ -5,7 +5,7 @@ import Star2 from "../../../public/star4.svg";
 import Shine from "../../../public/bg2.svg";
 export default function ThirdSection() {
   return (
-    <section className="bd pt-10 relative flex flex-col gap-y-14 row:flex-row row:justify-around row:items-center pb-7 overflow-hidden ">
+    <section className="pt-10 relative flex flex-col gap-y-14 row:flex-row row:justify-around row:items-center pb-7 overflow-hidden ">
       <div className="flex justify-center relative  row:order-2 ">
         <Image
           src={Lego}
@@ -26,7 +26,7 @@ export default function ThirdSection() {
         />
         <Image
           src={Shine}
-          className="absolute inset-0 rounded-full min-w-[765px] h-[788px] mask left-[3%] -top-[130%] mix-blend-hard-light se_lg:left-[30%] sm:left-[50%] md:left-[60%] row:left-[470px] row:-top-[30%] lg:left-[670px] xl:left-[780px] 2xl:left-[900px]"
+          className="absolute inset-0 rounded-full min-w-[765px] h-[788px] mask left-[3%] -top-[130%] mix-blend-hard-light se_lg:left-[30%] sm:left-[50%] md:left-[60%] row:left-[470px] row:min-w-[900px] row:-top-[15%] lg:left-[670px] xl:left-[780px] 2xl:left-[900px]"
           alt="shinebg"
         />
 
@@ -45,7 +45,7 @@ export default function ThirdSection() {
       </article>
       <Image
         src={Shine}
-        className=" absolute inset-0 rounded-full min-w-[765px] h-[788px] -left-[30%] -top-[20%] row:-left-[20%] z-10 mix-blend-hard-light row:top-[60px] row:my-auto row:h-[960px]"
+        className=" absolute inset-0 rounded-full min-w-[765px] se:-left-[125%] h-[788px] se_lg:-left-[95%] -left-[150%] desk:-left-[75%] md:-left-[40%] -top-[20%] row:-left-[20%] z-10 mix-blend-hard-light row:top-[60px] row:my-auto row:h-[960px]"
         alt="shinebg"
       />
     </section>

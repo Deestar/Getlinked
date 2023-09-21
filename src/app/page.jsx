@@ -1,3 +1,4 @@
+import FifthSection from "./components/FifthSection";
 import FirstSection from "./components/FirstSection";
 import FourthSection from "./components/FourthSection";
 import SecondSection from "./components/SecondSection";
@@ -10,6 +11,7 @@ export default function Hackton() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
     </main>
   );
 }
