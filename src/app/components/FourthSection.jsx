@@ -11,7 +11,7 @@ export default function FourthSection() {
         <Image
           src={Workers}
           alt="workers"
-          className="w-[18.5rem] h-[19.1rem] row:w-[30rem] row:h-[30rem] lg:w-[34rem]  xl:w-[38rem] z-20"
+          className="w-[18.5rem] h-[19.1rem] se_lg:w-[28rem] se_lg:h-[24rem]  row:w-[30rem] row:h-[30rem] lg:w-[34rem]  xl:w-[38rem] z-20"
         />
         <Image
           alt="shine"
@@ -60,7 +60,7 @@ export default function FourthSection() {
           </li>
           <li>
             <span className="text-getlink font-mont">
-              Adherence to Hackathon Rules:
+              Adherence to Hackathon Rules:{" "}
             </span>
             Judges will Ensure that the team adhered to the rules and guidelines
             of the hackathon, including deadlines, use of specific technologies
@@ -69,12 +69,12 @@ export default function FourthSection() {
           <Image
             alt="shine"
             src={Shine}
-            className="absolute z-10 inset-0 top-[25%] left-[30%] mask min-w-[450px] min-h-[850px] se:-top-8 se:left-[40%] se_lg:left-[45%] se_lg:top-[40%]  sm:left-[90%]  mix-blend-hard-light row:min-w-[600px] row:min-h-[600px] row:-left-4 row:top-[55%] lg:left-[40%]"
+            className="absolute z-10 inset-0 top-[18%] left-[30%] mask min-w-[450px] min-h-[850px] se:-top-6 se:left-[40%] se_lg:left-[45%] se_lg:top-[20%]  sm:left-[90%]  mix-blend-hard-light row:min-w-[600px] row:min-h-[600px] row:-left-4 row:top-[55%] lg:left-[40%]"
           />
           <Image
             alt="shine"
             src={Star}
-            className="absolute w-4 h-4 z-20 inset-0 top-[105%] left-[94%] row:-left-10 "
+            className="absolute w-4 h-4 z-20 inset-0 top-[105%] left-[94%] row:-left-10"
           />
         </ul>
         <button className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-mont text-sm py-2 px-7 w-max rounded self-center mt-3">
