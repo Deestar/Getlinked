@@ -24,6 +24,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "line-grad": "linear-gradient(270deg, #903AFF 0%, #D434FE 100%)",
       },
       fontFamily: {
         mont: ["var(--font-mont)"],
