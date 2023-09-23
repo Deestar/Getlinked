@@ -1,3 +1,4 @@
+import Eighth from "./components/Eighth";
 import FifthSection from "./components/FifthSection";
 import FirstSection from "./components/FirstSection";
 import FourthSection from "./components/FourthSection";
@@ -16,6 +17,7 @@ export default function Hackton() {
       <FifthSection />
       <SixthSection />
       <Seventh />
+      <Eighth />
     </main>
   );
 }
