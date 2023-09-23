@@ -44,8 +44,8 @@ export default function FormRegister({ setter }) {
       const getResponse = await res.json();
       console.log(getResponse);
     } catch (error) {
-      alert(error.statusText);
-      console.log("error with connection");
+      console.log(error.statusText);
+      alert("error with connection");
     } finally {
       setter(true);
     }
