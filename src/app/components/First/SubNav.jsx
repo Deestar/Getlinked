@@ -120,7 +120,7 @@ export default function SubNav({ setter }) {
           exit="exit"
           className="font-inter text-lg"
         >
-          <Link href="#">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </motion.li>
       </ul>
       <motion.button
