@@ -32,7 +32,7 @@ export default function FormRegister({ setter }) {
     inputData.append("privacy_policy_accepted", input.agree);
     try {
       const res = await fetch(
-        "https://backend.getlinked.ai/hackthon/registration",
+        "https://backend.getlinked.ai/hackathon/registration",
         {
           method: "POST",
           body: inputData,
