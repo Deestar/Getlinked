@@ -10,7 +10,7 @@ import Man from "../../../../public/warn.png";
 export default function MainPage() {
   return (
     <section className="pt-7 px-1 flex flex-col gap-y-9 overflow-x-hidden row:gap-y-15 overflow-y-hidden">
-      <h4 className="italic justify-center font-mont text-[11.5px] flex gap-1 se:text-sm se_lg:text-base z-40 sm:text-lg md:text-xl text-white  row:pr-9  row:text-2xl row:justify-end ">
+      <h4 className="italic justify-center font-mont text-[10.5px] flex gap-1 se:text-sm se_lg:text-base z-40 sm:text-lg md:text-xl text-white  row:pr-9  row:text-2xl row:justify-end ">
         Igniting a Revolution in
         <span className="inline-block  relative z-20 text-white">
           HR Innovation

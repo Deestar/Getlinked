@@ -5,7 +5,7 @@ import Star from "../../../public/star2.svg";
 import Star2 from "../../../public/star3.svg";
 export default function SecondSection() {
   return (
-    <section className="bd pt-10 flex flex-col gap-y-14 row:flex-row row:justify-around row:items-center pb-7">
+    <section className=" pt-10 flex flex-col gap-y-14 row:flex-row row:justify-around row:items-center pb-7">
       <div className=" flex justify-center relative">
         <Image
           src={Idea}
