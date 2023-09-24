@@ -4,6 +4,7 @@ import CreateTitle from "./CreateTitle";
 import Modal from "./Modal";
 
 export default function FormRegister({ setter }) {
+  const [loading, setloading] = useState(false);
   const [input, setInput] = useState({
     team: "",
     phone: "",
@@ -17,18 +18,20 @@ export default function FormRegister({ setter }) {
     const { type, name, value } = event.target;
     setInput((prev) => ({
       ...prev,
-      [name]: type == "checkbox" ? !prev : value,
+      [name]: type == "checkbox" ? !prev.agree : value,
     }));
   };
   const handleSubmit = async (event) => {
+    console.log(input);
     event.preventDefault();
+    setloading(true);
     const inputData = new FormData();
     inputData.append("email", input.email);
     inputData.append("phone_number", input.phone);
     inputData.append("team_name", input.team);
-    inputData.append(" group_size", input.size);
+    inputData.append("group_size", input.size);
     inputData.append("project_topic", input.topic);
-    inputData.append("category", input.category);
+    inputData.append("category", parseInt(input.category));
     inputData.append("privacy_policy_accepted", input.agree);
     try {
       const res = await fetch(
@@ -36,9 +39,6 @@ export default function FormRegister({ setter }) {
         {
           method: "POST",
           body: inputData,
-          headers: {
-            "Content-Type": "application/json",
-          },
         }
       );
       const getResponse = await res.json();
@@ -48,6 +48,7 @@ export default function FormRegister({ setter }) {
       alert("error with connection");
     } finally {
       setter(true);
+      setloading(false);
     }
   };
   return (
@@ -178,12 +179,22 @@ export default function FormRegister({ setter }) {
             I agreed with the event terms and conditions and privacy policy
           </p>
         </label>
-        <button
-          disabled={input.agree}
-          className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-mont text-sm se:text-base py-2 px-8 w-max rounded self-center mt-3 se_lg:px-12 se_lg:py-4 se_lg:text-xl"
-        >
-          Submit
-        </button>
+
+        {loading ? (
+          <button
+            disabled={true}
+            className={`bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500  font-mont text-sm se:text-base py-2 px-8 w-max rounded self-center mt-3 se_lg:px-12 se_lg:py-4 se_lg:text-xl  bg-slate-500 disabled:opacity-30`}
+          >
+            Loading...
+          </button>
+        ) : (
+          <button
+            disabled={!input.agree}
+            className={`bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500  font-mont text-sm se:text-base py-2 px-8 w-max rounded self-center mt-3 se_lg:px-12 se_lg:py-4 se_lg:text-xl  bg-slate-500 disabled:opacity-30`}
+          >
+            Submit
+          </button>
+        )}
       </form>
     </section>
   );

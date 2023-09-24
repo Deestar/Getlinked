@@ -7,6 +7,7 @@ import Chain from "../../../../public/chain.svg";
 import Globe from "../../../../public/globe.png";
 import BgShine from "../../../../public/bg2.svg";
 import Man from "../../../../public/warn.png";
+import Link from "next/link";
 export default function MainPage() {
   return (
     <section className="pt-7 px-1 flex flex-col gap-y-9 overflow-x-hidden row:gap-y-15 overflow-y-hidden">
@@ -88,9 +89,13 @@ export default function MainPage() {
             Big prize
           </p>
           <footer className="flex flex-col gap-y-5 pt-5">
-            <button className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-montsm text-sm py-3 px-10 w-max self-center row:self-start rounded z-20">
+            <Link
+              href="/register"
+              className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-montsm text-sm py-3 px-10 w-max self-center row:self-start rounded z-20"
+            >
               Register
-            </button>
+            </Link>
+
             <div className="flex font-unica justify-center text-4xl gap-x-4 row:gap-x-6 row:text-5xl">
               <h4>
                 00<sub className="font-montsm text-sm">H</sub>
