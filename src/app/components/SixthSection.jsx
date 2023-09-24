@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function SixthSection() {
   return (
-    <section className="relative py-14 flex flex-col items-center justify-center gap-y-10 px-2 ">
+    <section className="relative py-14 flex flex-col items-center justify-center gap-y-10 px-2 bd">
       <header className="text-center max-w-sm">
         <h1 className="font-clash text-xl pb-2 sm:text-2xl md:text-3xl">
           Timeline

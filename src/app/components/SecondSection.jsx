@@ -36,7 +36,7 @@ export default function SecondSection() {
     }),
   };
   return (
-    <section className=" pt-10 flex flex-col gap-y-14 row:flex-row row:justify-around row:items-center pb-7 overflow-hidden">
+    <section className="bd pt-10 flex flex-col gap-y-14 row:flex-row row:justify-around row:items-center pb-7 overflow-hidden">
       <motion.div
         variants={slideIn}
         initial="initial"

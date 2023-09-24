@@ -42,7 +42,7 @@ export default function FifthSection() {
     },
   };
   return (
-    <section className="justify-center pt-8 flex flex-col py-16 items-center gap-y-4 row:flex-row row:center gap-x-2 xl:gap-x-6 relative row:px-12">
+    <section className="justify-center pt-8 flex flex-col py-16 items-center gap-y-4 row:flex-row row:center gap-x-2 xl:gap-x-6 relative row:px-12 bd">
       <aside className="flex flex-col gap-y-11 max-w-xs">
         <article className="text-center relative">
           <h2 className="font-clash flex flex-col text-lg se_lg:text-xl">

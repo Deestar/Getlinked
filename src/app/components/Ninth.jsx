@@ -4,7 +4,7 @@ import Lock from "../../../public/lock.svg";
 import Check from "../../../public/check.svg";
 export default function Ninth() {
   return (
-    <div className="flex flex-col py-10 gap-y-40 row:flex-row row:items-center row:justify-center row:px-20">
+    <div className="flex flex-col py-10 gap-y-40 row:flex-row row:items-center row:justify-center row:px-20 bd">
       <section className="flex flex-col gap-y-10 px-1 items-center row:items-start">
         <header className="flex flex-col gap-y-8 text-center items-center max-w-[295px] row:items-start">
           <h1 className="flex flex-col font-clash text-lg w-max se:text-2xl row:text-start ">

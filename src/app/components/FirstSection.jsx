@@ -3,7 +3,7 @@ import Navbar from "./First/Navbar";
 
 export default function FirstSection() {
   return (
-    <section className="">
+    <section className="pb-10 bd">
       <Navbar />
       <MainPage />
     </section>

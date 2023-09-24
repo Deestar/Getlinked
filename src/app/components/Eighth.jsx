@@ -6,6 +6,7 @@ import Winwise from "../../../public/winwise.svg";
 import Wisper from "../../../public/wisper.svg";
 import Paybox from "../../../public/paybox.svg";
 import Assured from "../../../public/assured.svg";
+import Shine from "../../../public/bg2.svg";
 import Image from "next/image";
 export default function Eighth() {
   const fadeIn = {
@@ -21,7 +22,7 @@ export default function Eighth() {
   };
 
   return (
-    <section className="bg-[#150E28] flex flex-col py-12 gap-y-10 justify-center items-center ">
+    <section className="bg-[#150E28] flex flex-col py-12 gap-y-10 justify-center items-center bd">
       <header className="text-center">
         <h1 className="font-clash text-xl pb-2 sm:text-2xl md:text-3xl">
           Partners and Sponsors
@@ -33,8 +34,18 @@ export default function Eighth() {
           companies as its partners and sponsors
         </h3>
       </header>
-      <section className=" p-1 h-max w-full flex justify-center ">
-        <div className="grid grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] gap-y-3 gap-x-5 border border-getlink py-12 px-1 se:px-10 desk:px-16 sm:px-20 lg:px-28 row:gap-y-6 row:gap-x-[5.25rem]">
+      <section className=" p-1 h-max w-full flex justify-center relative">
+        <Image
+          src={Shine}
+          alt="shine"
+          className="absolute inse-0 w-[500px] h-[500px] mask  -top-[75%] -left-[40%]  se_lg:-top-[30%] desk:-left-[20%]  z-10 row:-left-[10%] lg:-left-[8%] xl:left-0 2xl:left-32"
+        />
+        <Image
+          src={Shine}
+          alt="shine"
+          className="absolute inse-0 w-[500px] h-[500px] mask -right-[40%] top-[30%] desk:-right-[20%] z-10 row:-right-[30%] row:top-[50%] lg:-right-[20%] xl:-right-[4%]"
+        />
+        <div className="grid grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] gap-y-3 gap-x-5 border border-getlink py-12 px-1 se:px-10 desk:px-16 sm:px-20 lg:px-28 row:gap-y-6 row:gap-x-[5.25rem] z-30">
           <motion.div
             variants={fadeIn}
             initial="initial"

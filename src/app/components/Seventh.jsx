@@ -5,6 +5,10 @@ import Trophy from "../../../public/trophy.png";
 import Silver from "../../../public/silver.svg";
 import Gold from "../../../public/gold.svg";
 import Bronze from "../../../public/bronze.svg";
+import Shine from "../../../public/bg2.svg";
+import Star from "../../../public/star.svg";
+import Star2 from "../../../public/star2.svg";
+import Star3 from "../../../public/star4.svg";
 export default function Seventh() {
   const floatUp = {
     initial: {
@@ -23,7 +27,7 @@ export default function Seventh() {
     }),
   };
   return (
-    <section className="py-12 flex flex-col justify-center items-center px-2 gap-y-16 row:items-end row:gap-y-36   row:px-13 ">
+    <section className="relative py-12 flex flex-col justify-center items-center px-2 gap-y-16 row:items-end row:gap-y-36   row:px-13 bd">
       <header className=" flex flex-col items-center row:items-start max-w-[18rem] row:text-center row:mr-[9%] row:max-w-max xl:mr-[15%] ">
         <h2 className="flex  flex-col font-clash text-xl w-max se:text-3xl row:text-start ">
           Prizes and <span className="text-getlink">Rewards</span>
@@ -35,13 +39,25 @@ export default function Seventh() {
           for participants.
         </p>
       </header>
-      <motion.div className="flex flex-col gap-y-32 row:flex-row  row:gap-x-8 row:items-end row:justify-end  row:self-center ">
+      <motion.div className="relative flex flex-col gap-y-32 row:flex-row  row:gap-x-8 row:items-end row:justify-end  row:self-center ">
         <Image
           src={Trophy}
           alt="trophy"
-          className="float min-h-[17rem] self-center row:self-start w-[90%] relative row:-translate-y-20 lg:min-w-[min(80%,_381px)]"
+          className="float min-h-[17rem] self-center row:self-start w-[90%] relative row:-translate-y-20 lg:min-w-[min(80%,_381px)] z-40"
         />
-        <section className="w-full flex items-center justify-center gap-x-2 self-center   row:items-end row:self-center row:inset-0 row:bottom-[80px] row:gap-x-3 se:gap-x-3 desk:gap-x-6">
+        {/* Shinebg */}
+        <Image
+          src={Shine}
+          alt="Shine"
+          className="absolute inset-0 mask w-[600px] h-[600px] -top-[35%] se:-top-[30%] left-[25%] se:left-[20%] z-10 row:-left-[5%] row:-top-[70%] mix-blend-hard-light"
+        />
+        <Image
+          src={Shine}
+          alt="Shine"
+          className="absolute inset-0 mask w-[600px] h-[600px] left-[70%] se_lg:left-[80%] z-20 sm:left-[110%] row:left-[80%] row:-top-[40%] lg:left-[92%] xl:left-[98%] 2xl:left-[111%] mix-blend-hard-light"
+        />
+        {/* end.. */}
+        <section className="w-full flex items-center justify-center gap-x-2 self-center   row:items-end row:self-center row:inset-0 row:bottom-[80px] row:gap-x-3 se:gap-x-3 desk:gap-x-6 z-30">
           {/* Silver */}
           <motion.div
             variants={floatUp}
@@ -122,6 +138,27 @@ export default function Seventh() {
           </motion.div>
         </section>
       </motion.div>
+      {/* Stars */}
+      <Image
+        alt="stars"
+        src={Star2}
+        className="w-4 h-4 absolute inset-0 left-[20%] top-[23%] se:top-[30%] row:top-[25%] row:left-[40%]"
+      />
+      <Image
+        alt="stars"
+        src={Star3}
+        className="w-4 h-4 absolute inset-0 left-[90%] top-[23%] se:top-[30%] row:top-[40%] row:left-[90%]"
+      />
+      <Image
+        alt="stars"
+        src={Star}
+        className="w-4 h-4 absolute inset-0 left-[35%] top-[96%] se:top-[97%] row:top-[90%] "
+      />
+      <Image
+        alt="stars"
+        src={Star2}
+        className="w-4 h-4 absolute inset-0 left-[79%] top-[96%] se:top-[97%] row:top-[90%] "
+      />
     </section>
   );
 }

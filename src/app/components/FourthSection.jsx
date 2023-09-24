@@ -54,7 +54,7 @@ export default function FourthSection() {
     },
   };
   return (
-    <section className="flex flex-col py-2 pt-7 row:flex-row row:justify-around row:items-center  row:py-5 overflow-hidden relative">
+    <section className="bd flex flex-col py-2 pb-3 pt-7 row:flex-row row:justify-around row:items-center  row:py-5 overflow-hidden relative">
       <motion.div
         variants={fromLeft}
         initial="initial"
