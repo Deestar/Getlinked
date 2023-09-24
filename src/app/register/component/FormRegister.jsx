@@ -53,7 +53,7 @@ export default function FormRegister({ setter }) {
   };
   return (
     <section className="w-full flex flex-col gap-y-3  desk:bg-[rgba(255,_255,_255,_0.03)]  py-4 px-2 max-w-[437px] mx-auto desk:shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] desk:backdrop-blur-[25px] desk:max-w-xl items-center desk:py-10 desk:rounded-lg sm:rounded-2xl row:min-w-max row:max-w-full row:px-6 lg:px-10 ">
-      <h2 className="text-getlink font-clash text-xl se_lg:text-2xl sm:text-3xl py-2  w-full">
+      <h2 className="text-getlink font-clash text-xl se_lg:text-2xl sm:text-3xl py-2  w-full  px-4">
         Register
       </h2>
       <CreateTitle />
@@ -67,7 +67,7 @@ export default function FormRegister({ setter }) {
               required
               maxLength={20}
               name="team"
-              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px] rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
+              className=" focus:border-getlink relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px] rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
               type="text"
               placeholder="Enter the name of your group"
             />
@@ -80,7 +80,7 @@ export default function FormRegister({ setter }) {
               name="phone"
               required
               maxLength={20}
-              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px] rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
+              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px]  focus:border-getlink rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
               type="phone"
               placeholder="Enter your phone number"
             />
@@ -95,7 +95,7 @@ export default function FormRegister({ setter }) {
               required
               name="email"
               maxLength={30}
-              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px] rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
+              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px]  focus:border-getlink rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
               type="email"
               placeholder="Enter your email address"
             />
@@ -108,7 +108,7 @@ export default function FormRegister({ setter }) {
               required
               name="topic"
               maxLength={150}
-              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px] rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
+              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px]  focus:border-getlink rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
               type="text"
               placeholder="What is your group project topic"
             />
@@ -122,7 +122,7 @@ export default function FormRegister({ setter }) {
               value={input.category}
               name="category"
               required
-              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px] rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none "
+              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px]  focus:border-getlink rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none "
               placeholder="Select your category"
             >
               <option className="text-black " value="1">
@@ -143,7 +143,7 @@ export default function FormRegister({ setter }) {
               value={input.size}
               name="size"
               required
-              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px] rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
+              className="relative h-12 border border-solid bg-[rgba(255,_255,_255,_0.03)]  shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)] backdrop-blur-[25px]  focus:border-getlink rounded-md placeholder:text-white   w-full px-2 text-lg font-montsm outline-none placeholder:text-base placeholder:font-montsm    focus:outline-none"
               placeholder="Select"
             >
               <option className="text-black " value="2">

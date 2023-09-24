@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import Curve from "../../../../public/curve.svg";
 import Star from "../../../../public/star.svg";
 import Spark from "../../../../public/spark.svg";

@@ -4,16 +4,16 @@ export default function LgNav({ iscontact, isregister }) {
   return (
     <section className="hidden row:flex  items-center  gap-x-16">
       <ul className="font-montsm flex gap-x-7">
-        <li>
+        <li className="hover:bg-line-grad hover:rounded-sm hover:bg-clip-text hover:text-transparent">
           <Link href="#">Timeline</Link>
         </li>
-        <li>
+        <li className="hover:bg-line-grad hover:rounded-sm hover:bg-clip-text hover:text-transparent">
           <Link href="#">Overview</Link>
         </li>
-        <li>
+        <li className="hover:bg-line-grad hover:rounded-sm hover:bg-clip-text hover:text-transparent">
           <Link href="#">FAQs</Link>
         </li>
-        <li>
+        <li className="hover:bg-line-grad hover:rounded-sm hover:bg-clip-text hover:text-transparent">
           <Link
             href="/contact"
             className={`${

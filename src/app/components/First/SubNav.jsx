@@ -123,16 +123,18 @@ export default function SubNav({ setter }) {
           <Link href="/contact">Contact</Link>
         </motion.li>
       </ul>
-      <motion.button
-        custom={5}
-        animate="animate"
-        variants={hide}
-        initial="initial"
-        exit="exit"
-        className="ml-3 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-montsm text-sm py-2 px-7 w-max self-center row:self-start rounded z-20"
-      >
-        Register
-      </motion.button>
+      <Link href="/register">
+        <motion.button
+          custom={5}
+          animate="animate"
+          variants={hide}
+          initial="initial"
+          exit="exit"
+          className="ml-3 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 font-montsm text-sm py-2 px-7 w-max self-center row:self-start rounded z-20"
+        >
+          Register
+        </motion.button>
+      </Link>
     </motion.section>
   );
 }
