@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Cloud from "../../../public/cloud.png";
 import Q1 from "../../../public/q1.png";
@@ -8,6 +10,37 @@ import Star from "../../../public/star.svg";
 import Star2 from "../../../public/star2.svg";
 import Star3 from "../../../public/star3.svg";
 export default function FifthSection() {
+  const slideIn = {
+    initial: {
+      opacity: 0,
+      x: -100,
+    },
+    animate: (custom) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        delay: custom * 0.4,
+      },
+    }),
+  };
+  const floatUp = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        delay: 0.4,
+        duration: 1.3,
+      },
+    },
+  };
   return (
     <section className="justify-center pt-8 flex flex-col py-16 items-center gap-y-4 row:flex-row row:center gap-x-2 xl:gap-x-6 relative row:px-12">
       <aside className="flex flex-col gap-y-11 max-w-xs">
@@ -22,51 +55,93 @@ export default function FifthSection() {
           </h3>
         </article>
         <ul className="font-montsm flex flex-col gap-y-3 px-1">
-          <li className="flex  justify-between border-b border-getlink ">
+          <motion.li
+            variants={slideIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={1}
+            className="flex  justify-between border-b border-getlink "
+          >
             <p className="text-xs/loose se_lg:text-sm/loose">
               Can I work on a project I started before the hackathon?
             </p>
             <h2 className="self-end text-xl/[27.4px] text-getlink ">+</h2>
-          </li>
-          <li className="flex  justify-between border-b border-getlink">
+          </motion.li>
+          <motion.li
+            variants={slideIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={2}
+            className="flex  justify-between border-b border-getlink"
+          >
             <p className="text-xs/loose se_lg:text-sm/loose">
               What happens if I need help during the
               <br className="hidden se:inline" />
               hackathon?
             </p>
             <h2 className="self-end text-xl/[27.4px] text-getlink ">+</h2>
-          </li>
-          <li className="flex  justify-between border-b border-getlink">
+          </motion.li>
+          <motion.li
+            variants={slideIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={3}
+            className="flex  justify-between border-b border-getlink"
+          >
             <p className="text-xs/loose se_lg:text-sm/loose">
               What happens if I don't have an idea for
               <br className="hidden se:inline" />a project?
             </p>
             <h2 className="self-end text-xl/[27.4px] text-getlink ">+</h2>
-          </li>
-          <li className="flex  justify-between border-b border-getlink">
+          </motion.li>
+          <motion.li
+            variants={slideIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={4}
+            className="flex  justify-between border-b border-getlink"
+          >
             <p className="text-xs/loose se_lg:text-sm/loose">
               Can I join a team or do I have to come
               <br className="hidden se:inline" />
               with one?
             </p>
             <h2 className="self-end text-xl/[27.4px] text-getlink ">+</h2>
-          </li>
-          <li className="flex  justify-between border-b border-getlink">
+          </motion.li>
+          <motion.li
+            variants={slideIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={5}
+            className="flex  justify-between border-b border-getlink"
+          >
             <p className="text-xs/loose se_lg:text-sm/loose">
               What happens after the hackathon
               <br className="hidden se:inline" />
               ends
             </p>
             <h2 className="self-end text-xl/[27.4px] text-getlink ">+</h2>
-          </li>
-          <li className="flex  justify-between border-b border-getlink">
+          </motion.li>
+          <motion.li
+            variants={slideIn}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={6}
+            className="flex  justify-between border-b border-getlink"
+          >
             <p className="text-xs/loose se_lg:text-sm/loose">
               Can I work on a project I started before the{" "}
               <br className="hidden se:inline" />
               hackathon?
             </p>
             <h2 className="self-end text-xl/[27.4px] text-getlink ">+</h2>
-          </li>
+          </motion.li>
         </ul>
         <Image
           src={Star3}
@@ -74,7 +149,13 @@ export default function FifthSection() {
           alt="star"
         />
       </aside>
-      <aside className=" relative pt-16 z-10">
+      <motion.aside
+        variants={floatUp}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.4 }}
+        className=" relative pt-16 z-10"
+      >
         <Image
           src={Q1}
           className="w-7 h-[2.7rem] self-end  absolute inset-0  top-[13%] left-[10%]"
@@ -116,7 +197,7 @@ export default function FifthSection() {
           className="w-4 h-4 absolute top-[55%] inset-0 left-[12%]  -z-10"
           alt="star"
         />
-      </aside>
+      </motion.aside>
       <Image
         className="absolute  -top-[15%] left-[55%] min-w-[20rem] h-[19rem]  mask mix-blend-hard-light xl:left-[62%]"
         src={Shine}

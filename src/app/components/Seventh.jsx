@@ -1,9 +1,27 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Trophy from "../../../public/trophy.png";
 import Silver from "../../../public/silver.svg";
 import Gold from "../../../public/gold.svg";
 import Bronze from "../../../public/bronze.svg";
 export default function Seventh() {
+  const floatUp = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (custom) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 150,
+        delay: custom * 0.4,
+        duration: 2,
+      },
+    }),
+  };
   return (
     <section className="py-12 flex flex-col justify-center items-center px-2 gap-y-16 row:items-end row:gap-y-36   row:px-13 ">
       <header className=" flex flex-col items-center row:items-start max-w-[18rem] row:text-center row:mr-[9%] row:max-w-max xl:mr-[15%] ">
@@ -17,15 +35,22 @@ export default function Seventh() {
           for participants.
         </p>
       </header>
-      <div className="flex flex-col gap-y-32 row:flex-row  row:gap-x-8 row:items-end row:justify-end  row:self-center ">
+      <motion.div className="flex flex-col gap-y-32 row:flex-row  row:gap-x-8 row:items-end row:justify-end  row:self-center ">
         <Image
           src={Trophy}
           alt="trophy"
-          className="min-h-[17rem] self-center row:self-start w-[90%] relative row:-translate-y-20 lg:min-w-[min(80%,_381px)]"
+          className="float min-h-[17rem] self-center row:self-start w-[90%] relative row:-translate-y-20 lg:min-w-[min(80%,_381px)]"
         />
         <section className="w-full flex items-center justify-center gap-x-2 self-center   row:items-end row:self-center row:inset-0 row:bottom-[80px] row:gap-x-3 se:gap-x-3 desk:gap-x-6">
           {/* Silver */}
-          <div className="se_lg:min-w-[120px] px-1 max-w-[90px] relative bg-[#d434fe1f] border border-getlink basis-[100%] se_lg:max-w-[120px] se_lg:h-[140px] rounded-md flex flex-col item-center justify-center h-28  row:min-w-[9.7rem]  row:h-[10.5rem] self-end">
+          <motion.div
+            variants={floatUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={2}
+            className="se_lg:min-w-[120px] px-1 max-w-[90px] relative bg-[#d434fe1f] border border-getlink basis-[100%] se_lg:max-w-[120px] se_lg:h-[140px] rounded-md flex flex-col item-center justify-center h-28  row:min-w-[9.7rem]  row:h-[10.5rem] self-end"
+          >
             <Image
               src={Silver}
               alt="silver"
@@ -42,9 +67,16 @@ export default function Seventh() {
                 N300,000
               </h2>
             </article>
-          </div>
+          </motion.div>
           {/* Gold */}
-          <div className="relative max-w-[90px] bg-[rgba(144,_58,_255,_0.12)] border border-[#903AFF] basis-[100%] se_lg:max-w-[120px] se_lg:min-w-[120px] se_lg:w-[120px] se_lg:h-[160px] rounded-md flex flex-col item-center h-32 row:min-w-[9.7rem] row:h-[12rem] justify-between">
+          <motion.div
+            variants={floatUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={1}
+            className="relative max-w-[90px] bg-[rgba(144,_58,_255,_0.12)] border border-[#903AFF] basis-[100%] se_lg:max-w-[120px] se_lg:min-w-[120px] se_lg:w-[120px] se_lg:h-[160px] rounded-md flex flex-col item-center h-32 row:min-w-[9.7rem] row:h-[12rem] justify-between"
+          >
             <Image
               src={Gold}
               alt="gold"
@@ -61,9 +93,16 @@ export default function Seventh() {
                 N400,000
               </h2>
             </article>
-          </div>
+          </motion.div>
           {/* Bronze */}
-          <div className="px-1 max-w-[90px] se_lg:min-w-[120px] relative bg-[#d434fe1f] border border-getlink basis-[100%] self-end se_lg:max-w-[120px] se_lg:h-[140px]  rounded-md flex flex-col item-center justify-center h-28  row:min-w-[9.7rem]  row:h-[10.5rem] ">
+          <motion.div
+            variants={floatUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true, amount: 0.3 }}
+            custom={3}
+            className="px-1 max-w-[90px] se_lg:min-w-[120px] relative bg-[#d434fe1f] border border-getlink basis-[100%] self-end se_lg:max-w-[120px] se_lg:h-[140px]  rounded-md flex flex-col item-center justify-center h-28  row:min-w-[9.7rem]  row:h-[10.5rem] "
+          >
             <Image
               src={Bronze}
               alt="bronze"
@@ -80,9 +119,9 @@ export default function Seventh() {
                 N300,000
               </h2>
             </article>
-          </div>
+          </motion.div>
         </section>
-      </div>
+      </motion.div>
     </section>
   );
 }
